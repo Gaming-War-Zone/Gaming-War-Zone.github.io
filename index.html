@@ -2,9 +2,111 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Personal Website</title>
+    <title>Title</title>
 </head>
 <style>
+@import url(@import url(https://fonts.googleapis.com/css?family=Lato:400,300);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+.stage {
+padding:40px;
+text-align:center;}
+a {
+  line-height:1em;
+  letter-spacing:0.06em;
+  font-family: 'Lato', sans-serif;
+  font-weight:normal;
+  font-size:16px;
+  text-decoration:none;
+  color:#fff;
+  background:#231f20;
+  display:inline-block;
+  padding:15px 12px 15px 15px;
+  transition:background 200ms;
+  border-radius:4px;
+}
+a:hover {
+  background:#cea052;
+}
+a:after {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight:300;
+  content: "\f105";
+  margin-left:20px;
+  color:#cea052;
+  font-size:18px;
+  vertical-align:middle;
+  transition:color 200ms;
+}
+
+a:hover:after {
+  color:#231f20;
+}
+
+
+    .F {
+        transform: translate(20px, 85px) rotate(-85.3deg);
+    }
+
+    .H1 {
+        transform: translate(13px, 60px) rotate(-80.6deg);
+    }
+
+    .A1 {
+        transform: translate(6px, 40px) rotate(-75.9deg);
+    }
+
+    .T1 {
+        transform: translate(3px, 23px) rotate(-15deg);
+    }
+
+    .U {
+        transform: translate(2px, 14px) rotate(-10deg);
+    }
+
+    .W {
+        transform: translate(1px, 8px) rotate(-5deg);
+    }
+
+    .A2 {
+        transform: translate(0px, 5px) rotate(0deg);
+    }
+
+    .N {
+        transform: translate(-1px, 8px) rotate(5deg);
+    }
+
+    .I1 {
+        transform: translate(-2px, 14px) rotate(10deg);
+    }
+
+    .space {
+        transform: translate(20px, 85px) rotate(-30deg);
+    }
+
+    .T2 {
+        transform: translate(-3px, 25px) rotate(15deg);
+    }
+
+    .S1 {
+        transform: translate(-6px, 40px) rotate(20deg);
+    }
+
+    .H2 {
+        transform: translate(-14px, 60px) rotate(25deg);
+    }
+
+    .I2 {
+        transform: translate(-20px, 80px) rotate(30deg);
+    }
+
+    /* An inline-block element is placed as an inline
+     element (on the same line as adjacent content),
+     but it behaves like a block element  */
+
+    span {
+        display: inline-block;
+    }
+
     .1 {
     list-style-image: url('sqpurple.gif');
     }
@@ -30,8 +132,7 @@
 	}
 	.space{
 	font-size: 40px;
-    margin-top:15%;
-    margin-left:45%;
+	font-family: Rockwell ;
     }
     .space1{
     font-size: 20px;
@@ -44,7 +145,7 @@
     font-family:font-family: Arial, Helvetica, sans-serif;
     }
 	body {
-	background-color: #ECEDEE;
+	background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -52,90 +153,289 @@
     h1{
     font-size: 20px;
     }
+    path {
+    fill: transparent;
+    }
+
+    text {
+    fill: #FF9800;
+    }
+    .contains {
+     background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80');
+     background-size:cover;
+     }
+     button{
+     border-radius:5px;
+     background-color:#389EFF;
+     color:white;
+     padding: 20px 37px;
+     font-size: 16px;
+     }
+     .section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  margin-top: 50px;
+}
+
+.item {
+  border: 5px solid black;
+  padding: 50px 40px;
+  background-color: #ffffff;
+  margin: 5px;
+  margin-bottom: 1.25rem; /* ändra detta */
+  width: 270px;
+  height: 10rem;
+  padding: 30px;
+  border-radius: 0.5rem;
+  position: relative;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.item .title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0;
+  color: #0e224a;
+  margin-top: 1rem;
+}
+
+.item .text {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.item .icon {
+  display: "flex";
+  justify-content: "center";
+  align-items: "center";
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow-x: visible;
+}
+
+.item .icon .img {
+  width: 2.5rem;
+  position: relative;
+  top: 1.25rem;
+}
+#cv{
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background: #F7F7F7;
+}
+
+#cv  hr{
+    height: 1px;
+    border: none;
+    background: #DDD;
+    margin: 50px auto;
+}
+
+#cv .row h3{
+	border-bottom: 3px solid #11ABB0;
+	font-size: 24px;
+	padding-bottom: 5px;
+    width: min-content;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: -ms-min-content;
+    width: -o-min-content;
+	margin-bottom: 50px;
+}
+
+#cv .row{
+	margin-bottom: 80px;
+}
+
+.skills + .skills{
+    margin-top: 60px;
+
+}
+
+.skills > h4{
+    color: #11ABB0;
+    margin-bottom: 40px;
+}
+
+#cv .skill-item + .skill-item{
+	margin-top: 30px;
+}
+
+#cv .skill-item > h4{
+	font-size: 16px;
+	color: #222;
+}
+
+#cv .skill-item > .progress{
+	height: 40px;
+	background: #DDD;
+}
+
+#cv .skill-item .progress-bar{
+	background: #222;
+}
+
+.exp + .exp{
+    margin-top: 60px;
+
+}
+
+.exp > h4{
+    color: #11ABB0;
+    margin-bottom: 40px;
+}
+
+#cv .box + .box{
+    margin-top: 50px;
+}
+
+#cv .box h4{
+	font-size: 20px;
+	color: #222;
+}
+
+#cv .box h6{
+	color: #11ABB0;
+}
+
+#cv .box p{
+	color: #888;
+}
+
+
+
+
+/* P O R T F O L I O */
+
+
+#portfolio{
+	padding: 80px 0;
+    background: #EBEEEE;
+}
+
+
+#portfolio h2{
+    padding: 0;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #666;
+}
+
+#portfolio img{
+	max-width: 100%;
+}
+
+#portfolio .row > div{
+	margin-bottom: 1.5rem;
+    position: relative;
+}
+
+
+
+#portfolio .row div .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: calc(100% - 30px);
+    transform: scale(0);
+    margin: auto;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    background: rgba(0, 0, 0, .55);
+    border-radius: 20%;
+}
+
+#portfolio .row div:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+    height: 100%;
+    border-radius: 0;
+}
+
+#portfolio .row div .overlay h3{
+    color: #f7f7f7;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -200%);
+            transform: translate(-50%, -200%);
+    -ms-transform: translate(-50%, -200%);
+    letter-spacing: .05em;
+}
+
+.overlay h3.project-title{
+    -webkit-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+}
+
 </style>
-<body>
-<span class=space><b>Fhatuwani Tshivhase</b></span>
-<span class="space1">Data Engineer</span>
-<br><br>
+<body style="background-color: coral;">
 <div class="row">
-  <div class="column left"><b>01 PROFILE</b></div>
-  <div class="column right" style="line-height:15px; font-family:serif; width:55%;"><hr style="width:100%">Proficient data engineer with two years of experience in python, MySQL and Docker. Am looking
-to build robust databases that lead to client revenue increases. Well-acquainted with Big data,
-Data warehouses, Analysis and Wrangling.</div>
-<br><br><br><br><br><br><br><br><br>
-</div>
-<div class="row" style="padding-top:65px;">
-  <div class="column left" style="padding-top: 30px;">
-  	<b>
-    	02 EDUCATION
-    </b>
-  	<div style="font-size:11.5px; padding-top:15px; margin-left:8px;">
-    	Feb 2020 — Feb 2022
-    </div>
-  </div>
-  <br><br><br><br><br>
-  <div class="column right" style="line-height:15px;">
-    <div><hr style="width: 27%;">
-      <b>
-        UNISA
-      </b>
-    </div>
-    <div style="padding-top:15px;">
-    	Diploma (Mechanical Engineering)
-    </div>
-    <div style="font-size:12px; padding-top:20px; font-family:serif; 				color:grey;">
-    	Graduated with a diploma in Mechanical Engineering
-    </div>
-    <br>
-    <br>
-  </div>
-<div class="column left">
-	<div style="font-size:11.5px; padding-top:15px; margin-left:8px;">May 2022 — Aug 2022
-    </div>
-</div>
-<div class="column right" style="line-height:15px;">
-	<div style="padding-top:25px;"><hr style="width: 48%;">
-  		<b>UMUZI</b>
-  	</div>
-    <div style="padding-top:15px;">
-    	National Certificate in Information Technology (System Development)
-    </div>
-    <div style="font-size:12px; padding-top:20px; font-family:serif; 				color:grey;">
-    	Graduating with a Certificate in IT
-    </div>
-    <br>
-</div>
+    <div class="column contains" style="padding-top:20px; color:white;">
+        <div class="column right">
+            <img src="my_picture.jpeg " style="width:435px; height:600px; margin-left:920px; border-left: 5px solid orange;
+    border-right : 5px solid orange;
+    border-top : 5px solid orange;
+    border-bottom : 5px solid white;
+    border-radius: 5px;">
+        </div>
+
+        <div class="column left">
+            <div style="margin-left:-220%; font-size:45px; margin-top:10%">
+                Benedict Tshivhase
+            </div >
+            <div style="margin-left:-190%; font-size:25px; margin-top:10%">
+                Data Engineer
+            </div >
+            <div class="section" style="margin-left:-290%; margin-top:60%">
+                <div class="item">
+                     <div class="icon">
+                         <img src="https://cdn4.iconfinder.com/data/icons/standard-free-icons/139/Profile01-512.png" style="width:90px; height:80px">
+                    </div>
+                    <h3 class="title">About Me</h3>
+                        <p class="text" style="color:black;">Proficient data engineer with two years of experience in python, MySQL and Docker. Am looking
+to build robust databases that lead to client revenue increases. Well-acquainted with Big data,</p>
+                </div>
+            </div>
+
+            <div class="section" style="margin-left:-140%; margin-top:-75%">
+                <div class="item">
+                     <div class="icon">
+                         <img src="data.svg" style="width:90px; height:80px">
+                    </div>
+                    <h3 class="title">Data Eng</h3>
+                        <p class="text" style="color:black;">Data engineering is the practice of designing and building systems for collecting, storing, and analyzing data at scale. It is a broad field with applications in just about every industry. </p>
+                </div>
+            </div>
+            <div class="stage" style="margin-left:-427%; font-color:black; margin-top:-15%">
+<a href="More.html">Learn More</a>
 </div>
 
-<div class="row" style="padding-top:20%;">
-  <div class="column left">
-  	<b>
-    	03 SKILLS
-    </b>
-  </div>
-  <div class="column right" style="line-height:15px; font-family:serif; "><hr style="width: 27%;">
-   <ul>
-    	<li>HTML & CSS</li>
-        <li>MySQL</li>
-        <li>Machine Learning</li>
-        <li>ETL</li>
+        </div>
 
-        <li>Docker</li>
-        <li>SQL</li>
-        <li>Python</li>
-    </ul>
-</div>
-<br><br><br><br><br><br><br>
 
-<div class="row"  style="padding-top:12%;">
-  <div class="column left"><b>04 Contacts</b></div>
-  <div class="column right" style="margin-top:0px; font-family:serif; "><hr style="width: 27%;">
-    <div style="line-height:30px;"><b>Phone Number: 0684085164</b></div>
-  	<div style="line-height:30px;"><b>Email: benedicttshivhase@gmail.com</b></div>
-    <div style="line-height:30px; color:black;"><b>Linkedin: <a href="https://www.linkedin.com/in/fhatuwani-tshivhase-754b83239/">Fhatuwani Tshivhase</a></b></div>
-	  <div style="line-height:30px; color:black;"><b>Github: <a href="https://github.com/Gaming-War-Zone">Gaming-War-Zone</a></b></div>
-  </div>
-<br><br><br><br><br><br><br><br><br>
+    </div>
+
 </div>
 
 </body>
