@@ -20,15 +20,7 @@ p, span, a{
     font-family: "Raleway", sans-serif !important;
 }
 
-.button{
-    padding: 12px;
-    border: 2px solid;
-    border-radius: 3px;
-    text-transform: uppercase;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    font-size: 16px;
-}
+
 
 /* Scrollbar */
 
@@ -733,7 +725,7 @@ body {
 body {
 	background: #fff;
 	padding: 50px;
-	background: url(https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1920)
+	background: url(https://cdn-images-1.medium.com/max/1600/1*5XH40dQSsBVFtvx3MO5VwQ.png)
 	no-repeat center center / cover;
 
 	header {
@@ -811,16 +803,87 @@ body {
     color: blue;
     font-weight: bold;
 }
+
+
+
+a {
+  line-height:1em;
+  letter-spacing:0.06em;
+  font-family: 'Lato', sans-serif;
+  font-weight:normal;
+  font-size:20px;
+  text-decoration:none;
+  color:#fff;
+  background:#231f20;
+  display:inline-block;
+  transition:background 200ms;
+  border-radius:4px;
+  width:120px;
+  height:40px;
+}
+a:hover {
+  background:#cea052;
+}
+a:after {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight:300;
+  content: "\f105";
+  margin-left:20px;
+  color:#cea052;
+  font-size:18px;
+  vertical-align:center;
+  transition:color 200ms;
+}
+
+a:hover:after {
+  color:#231f20;
+}
+
+button.current{
+  border-color:#231f20;
+  color:blue;
+  font-weight: bold;
+}
+
+button{
+  color:#fff;
+  background:#231f20;
+  display:inline-block;
+  padding: 12px;
+  border: 2px solid;
+  border-radius: 5px;
+  text-transform: uppercase;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-size: 16px;
+  width:120px;
+  border-color:#231f20;
+}
 </style>
 
 <nav class="nav" >
-        <div class="container" style="padding-top:2px;">
-            <h1 class="logo"><a href="index.html">Personal Website</a></h1>
+        <div class="container" style="padding-top:2px; margin-left:60%;">
             <ul>
-                <li><a href="https://gaming-war-zone.github.io/">Home</a></li>
-                <li><a href="#" class="current">Skills</a></li>
-                <li><a href="https://gaming-war-zone.github.io/projects.html" >Projects</a></li>
-                <li><a href="https://benedict-thankyou.herokuapp.com/">Contact</a></li>
+                <li>
+                  <button  onclick="location.href='https://gaming-war-zone.github.io/'" type="button">
+                    Home
+                  </button>
+                </li>
+                <li>
+                  <button class="current" onclick="location.href='#'" type="button">
+                    Skills
+                  </button>
+                </li>
+                <li>
+                  <button onclick="location.href='https://gaming-war-zone.github.io/projects.html'" type="button">
+                    Projects
+                  </button>
+                </li>
+                <li>
+                  <button onclick="location.href='https://benedict-thankyou.herokuapp.com/'" type="button">
+                    Contact
+                  </button>
+                </li>
             </ul>
         </div>
     </nav>
@@ -830,7 +893,7 @@ body {
 
 
 
-    <div class="container-fluid" id="cv" style="background-color: white;">
+    <div class="container-fluid" id="cv" style="background: url(https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80);">
         <div class="container">
           <div class="row" >
             <div class="col-md-2 col-sm-12 left" >
@@ -840,7 +903,7 @@ body {
 
               <div class="skills right">
                   <div >
-                    <h4 style="font-size:24px;">Programming languages</h4>
+                    <h4 style="font-size:30px;">Programming languages</h4>
                         <hr style="height:10px; background:black;">
                     <div class="skill-item">
                       <span>
@@ -871,9 +934,13 @@ body {
                     </div>
 
                   </div>
+                <br>
+                <br>
+                <br>
                 </div>
+
               <div class="skills right" style="padding-top:2%;">
-                <h4 style="font-size:24px; color:black;">Frameworks</h4>
+                <h4 style="font-size:30px; color:black;">Frameworks</h4>
                   <hr style="height:10px; background:black;">
                 <div class="skill-item">
                   <span>
@@ -903,14 +970,16 @@ body {
                   </span>
                 </div>
 
-              <hr>
 
+              <br>
+                <br>
+                <br>
               </div>
 
 
 
                 <div class="skills right" style="padding-top:2%;">
-                <h4 style="font-size:24px; color:black;">Libraries</h4>
+                <h4 style="font-size:30px; color:black;">Libraries</h4>
                   <hr style="height:10px; background:black;">
                 <div class="skill-item">
                   <span>
@@ -940,7 +1009,7 @@ body {
                   </span>
                 </div>
 
-              <hr>
+
 
               </div>
 
@@ -948,9 +1017,12 @@ body {
 
             </div>
 
+            <br>
+            <br>
+            <br>
           </div>
 
-          <hr id="education">
+
 
           <div class="row">
             <div class="col-md-2 col-sm-12 left">
@@ -959,9 +1031,9 @@ body {
             <div class="col-md-9 col-sm-12 offset-md-1 right">
 
               <div class="box">
-                <h4>Matric</h4>
-                <h6 style="font-size:15px;">School:Pro Atre Alphen Park&emsp;&#8226;&emsp;Date:2019</h6>
-                <p>Metric certificate</p>
+                <h4 style="color:black; ">Matric</h4>
+                <h6 style="font-size:20px; color:black;">School:Pro Atre Alphen Park&emsp;&#8226;&emsp;Date:2019</h6>
+                <p style="color:#11ABB0;">Metric certificate</p>
               </div>
             </div>
           </div>

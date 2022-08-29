@@ -11,10 +11,12 @@
   padding: 10px;
 }
 .grid-item {
-  height:90px;
-  background-color: rgba(255, 255, 255, 0.8);
+  height:310px;
+  width: 240px;
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 20px;
+  padding-left:20%;
+  padding-right:20%;
   border-radius:5px;
   font-size: 30px;
   text-align: center;
@@ -73,39 +75,82 @@
     color: blue;
     font-weight: bold;
 }
+body {
+	background: #fff;
+	padding: 50px;
+	background: url(https://cdn-images-1.medium.com/max/1600/1*5XH40dQSsBVFtvx3MO5VwQ.png)
+	no-repeat center center / cover;
+}
 
+button.current{
+  border-color:#231f20;
+  color:blue;
+  font-weight: bold;
+}
+
+button{
+  color:#fff;
+  background:#231f20;
+  display:inline-block;
+  padding: 12px;
+  border: 2px solid;
+  border-radius: 5px;
+  text-transform: uppercase;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  font-size: 16px;
+  width:120px;
+  border-color:#231f20;
+}
+
+.contains {
+     background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80');
+     background-size:cover;
+     width:100%;
+     height:90%;
+     }
 </style>
 <body>
 <nav class="nav" >
-        <div class="container" style="padding-top:2px;">
-            <h1 class="logo"><a href="index.html">Personal Website</a></h1>
+        <div class="container" style="padding-top:2px; margin-left:60%;">
             <ul>
-                <li><a href="https://gaming-war-zone.github.io/">Home</a></li>
-                <li><a href="#" >Skills</a></li>
-                <li><a href="https://gaming-war-zone.github.io/projects.html" class="current">Projects</a></li>
-                <li><a href="https://benedict-thankyou.herokuapp.com/">Contact</a></li>
+                <li>
+                  <button  onclick="location.href='https://gaming-war-zone.github.io/'" type="button">
+                    Home
+                  </button>
+                </li>
+                <li>
+                  <button  onclick="location.href='#'" type="button">
+                    Skills
+                  </button>
+                </li>
+                <li>
+                  <button class="current" onclick="location.href='https://gaming-war-zone.github.io/projects.html'" type="button">
+                    Projects
+                  </button>
+                </li>
+                <li>
+                  <button onclick="location.href='https://benedict-thankyou.herokuapp.com/'" type="button">
+                    Contact
+                  </button>
+                </li>
             </ul>
         </div>
     </nav>
 <br>
-<br>
-<br>
-<h1>Projects</h1>
-<div>
-  I have no projects for now
-</div>
-<!--
-<div class="grid-container">
-  <div class="grid-item">1</div>
-  <div class="grid-item">2</div>
-  <div class="grid-item">3</div>
-  <div class="grid-item">4</div>
+
+
+<div class="grid-container contains">
+  <a class="grid-item" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCwIdCYJnRmDUQnpDKNvY31bHNh_3NevoPjg&usqp=CAU'); " href="https://github.com/Gaming-War-Zone/MindSweeper"></a>
+  <div class="grid-item" style="background:none">2</div>
+  <div class="grid-item" style="background:none">3</div>
+  <div class="grid-item" style="background:none">4</div>
   <div class="grid-item">5</div>
   <div class="grid-item">6</div>
   <div class="grid-item">7</div>
   <div class="grid-item">8</div>
   <div class="grid-item">9</div>
 </div>
--->
+
 </body>
 </html>
